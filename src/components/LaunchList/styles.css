@@ -1,0 +1,24 @@
+.LaunchList {
+    height: 100vh;
+    overflow: hidden auto;
+    background:  linear-gradient(to top, #8c5474, #895b82, #83638e, #7c6c99, #7374a2, #6c7fae, #648bb7, #5c96be, #55a7c9, #52b8cf, #5ac8d2, #6bd8d1);
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .LaunchList__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .LaunchList__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #919191;
+    cursor: pointer;
+  }
+  .LaunchList__item:hover{
+    color: rgb(179, 60, 60);
+  }
