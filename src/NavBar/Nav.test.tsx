@@ -1,14 +1,13 @@
 import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import App from './App'
-
+import Navbar from './NavBar'
 Enzyme.configure({ adapter: new Adapter() })
 
-let wrapper = shallow(<App />)
+let wrapper = shallow(<Navbar />)
 
 describe('App' , () => {
     it('should render a <div />', () => {
-        expect(wrapper.find('div').length).toEqual(1);
+        expect(wrapper.find('div').length).toBeTruthy()
       });
 })

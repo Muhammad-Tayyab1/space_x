@@ -9,9 +9,11 @@ const client = new ApolloClient({
 cache :new InMemoryCache()
 });
 ReactDOM.render(
+  <React.StrictMode>
   <ApolloProvider client={client}>
     <App />
-  </ApolloProvider>,
+  </ApolloProvider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
